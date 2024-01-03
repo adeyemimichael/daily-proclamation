@@ -11,12 +11,16 @@ function generateProclamation() {
     "May the Lord bless you and keep you. - Numbers 6:24",
 "Blessed are the peacemakers, for they shall be called sons of God. - Matthew 5:9",
 "Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers. - Psalm 1:1",
- "Blessed be the God and Father of our Lord Jesus Christ, who has blessed us in Christ with every spiritual blessing in the heavenly places. - Ephesians 1:3"
+ "Blessed be the God and Father of our Lord Jesus Christ, who has blessed us in Christ with every spiritual blessing in the heavenly places. - Ephesians 1:3",
+ " I am blessed beyond measures",
+ "With God on my side i will make it big enough",
+ "No doubt i am moving with strength",
   ];
+
   
 
   // Get a random number between 0 and 364 (for array indexing)
-  const randomIndex = Math.floor(Math.random() * 8);
+  const randomIndex = Math.floor(Math.random() * 10);
 
   const randomQuote = bibleQuotes[randomIndex];
   
