@@ -52,3 +52,22 @@ footer{
   font-size: 14px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Media Query for Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+  #proclamationDisplay {
+    font-size: 20px; /* Adjusting font size for smaller screens */
+    width: 100%; /* Set the width to full screen */
+  }
+
+  form {
+    display: flex;
+    flex-direction: column; /* Change to a column layout for input and button */
+    align-items: center;
+  }
+
+  #userName {
+    width: 80%; /* Adjust width for better display in mobile */
+    margin-bottom: 10px; /* Add margin for separation */
+  }
+}
