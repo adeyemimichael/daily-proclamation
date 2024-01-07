@@ -102,28 +102,19 @@ function generateProclamation() {
 "Today, I seek wisdom as the cornerstone of my journey. I embrace the fear of the Lord as the foundation of true understanding. I ask God for wisdom, knowing He generously bestows it upon me without judgment.",
 
 "I commit to pursuing wisdom and understanding, holding steadfast to God's teachings and never turning away from His words. I recognize the value of seeking counsel and listening to advice, for wisdom springs from openness to guidance.",
+
 "I declare that my words reflect righteousness and life, nurturing and uplifting those around me. I shun the ways of folly and embrace the wisdom that flows from a heart devoted to God's teachings.",
-"I DECLARE God’s incredible blessings over my life. I will see an explosion of God’s goodness, a sudden widespread increase. I will experience the surpassing greatness of God’s favor. It will elevate me to a level higher than I ever dreamed of. Explosive blessings are coming my way. This is my declaration.",
-"I DECLARE I will experience God’s faithfulness. I will not worry. I will not doubt. I will keep my trust in Him, knowing that He will not fail me. I will give birth to every promise God put in my heart and I will become everything God created me to be. This is my declaration.",
-"I DECLARE I have the grace I need for today. I am full of power, strength, and determination. Nothing I face will be too much for me. I will overcome every obstacle, outlast every challenge, and come through every difficulty better off than I was before. This is my declaration.",
-"I DECLARE it is not too late to accomplish everything God has placed in my heart. I have not missed my window of opportunity. God has moments of favor in my future. He is preparing me right now because He is about to release a special grace to help me accomplish that dream. This is my time. This is my moment. I receive it today! This is my declaration.",
-"I DECLARE I am grateful for who God is in my life and for what He’s done. I will not take for granted the people, the opportunities, and the favor He has blessed me with. I will look at what is right and not what is wrong. I will thank Him for what I have and not complain about what I don’t have. I will see each day as a gift from God. My heart will overflow with praise and gratitude for all of His goodness. This is my declaration.",
-" I DECLARE a legacy of faith over my life. I declare that I will store up blessings for future generations. My life is marked by excellence and integrity. Because I’m making right choices and taking steps of faith, others will want to follow me. God’s abundance is surrounding my life today. This is my declaration.",
-"I DECLARE that God has a great plan for my life. He is directing my steps. And even though I may not always understand how, I know my situation is not a surprise to God. He will work out every detail to my advantage. In His perfect timing, everything will turn out right. This is my declaration.",
-"I DECLARE God’s dream for my life is coming to pass. It will not be stopped by people, disappointments, or adversities. God has solutions to every problem I will ever face already lined up. The right people and the right breaks are in my future. I will fulfill my destiny. This is my declaration.",
-"I DECLARE I will put actions behind my faith. I will not be passive or indifferent. I will demonstrate my faith by taking bold steps to move toward what God has put in my heart. My faith will not be hidden; it will be seen. I know when God sees my faith, He will show up and do amazing things. This is my declaration." ,
-" I DECLARE there is an anointing of ease on my life. God is going before me making crooked places straight. His yoke is easy and His burden is light. I will not continually struggle. What used to be difficult will not be difficult anymore. God’s favor and blessing on my life is lightening the load and taking the pressure off.",
-"I DECLARE breakthroughs are coming in my life, sudden bursts of God’s goodness. Not a trickle. Not a stream. But a flood of God’s power. A flood of healing. A flood of wisdom. A flood of favor. I am a breakthrough person and I choose to live breakthrough minded. I am expecting God to overwhelm me with His goodness and amaze me with His favor. This is my declaration.",
+
   ];
 
   // Get displayed quotes from localStorage or initialize an empty array
   let displayedQuotes = JSON.parse(localStorage.getItem('displayedQuotes')) || [];
 
-  // // Check if all quotes have been displayed
-  // if (displayedQuotes.length === bibleQuotes.length) {
-  //   proclamationDisplay.innerHTML = "<p>No more quotes available. Refresh for new quotes!</p>";
-  //   return;
-  // }
+  // Check if all quotes have been displayed
+  if (displayedQuotes.length === bibleQuotes.length) {
+    proclamationDisplay.innerHTML = "<p>No more quotes available. Refresh for new quotes!</p>";
+    return;
+  }
 
   // Get a random index from the remaining quotes
   let randomIndex;
